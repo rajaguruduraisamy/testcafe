@@ -204,10 +204,10 @@ describe('Code steps', () => {
 
     it('require - absolute', async () => {
         await executeAsyncExpression(`
-            return require('testcafe-hammerhead');
+            return require('@rajaguruduraisamy/testcafe-hammerhead');
         `)
             .then(result => {
-                expect(result).eql(require('testcafe-hammerhead'));
+                expect(result).eql(require('@rajaguruduraisamy/testcafe-hammerhead'));
             });
     });
 

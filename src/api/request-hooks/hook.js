@@ -1,4 +1,4 @@
-import { RequestFilterRule } from 'testcafe-hammerhead';
+import { RequestFilterRule } from '@rajaguruduraisamy/testcafe-hammerhead';
 import { castArray } from 'lodash';
 import { RequestHookNotImplementedMethodError } from '../../errors/test-run';
 

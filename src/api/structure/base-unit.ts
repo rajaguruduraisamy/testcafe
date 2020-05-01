@@ -1,4 +1,4 @@
-import { generateUniqueId } from 'testcafe-hammerhead';
+import { generateUniqueId } from '@rajaguruduraisamy/testcafe-hammerhead';
 import * as unitTypes from './unit-types';
 
 

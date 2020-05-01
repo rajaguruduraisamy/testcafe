@@ -1,6 +1,6 @@
 import { chain } from 'lodash';
-// @ts-ignore Could not find a declaration file for module 'testcafe-hammerhead'
-import { generateUniqueId, RequestFilterRule } from 'testcafe-hammerhead';
+// @ts-ignore Could not find a declaration file for module '@rajaguruduraisamy/testcafe-hammerhead'
+import { generateUniqueId, RequestFilterRule } from '@rajaguruduraisamy/testcafe-hammerhead';
 import ClientScript from './client-script';
 import ProblematicScripts from './problematic-scripts';
 

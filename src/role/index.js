@@ -5,7 +5,7 @@ import { assertType, is } from '../errors/runtime/type-assertions';
 import wrapTestFunction from '../api/wrap-test-function';
 import { resolvePageUrl } from '../api/test-page-url';
 import roleMarker from './marker-symbol';
-import { StateSnapshot } from 'testcafe-hammerhead';
+import { StateSnapshot } from '@rajaguruduraisamy/testcafe-hammerhead';
 
 class Role extends EventEmitter {
     constructor (loginPage, initFn, options = {}) {

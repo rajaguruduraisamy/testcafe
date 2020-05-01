@@ -2,8 +2,8 @@ import { readFile } from '../utils/promisified-functions';
 import { GeneralError } from '../errors/runtime';
 import { RUNTIME_ERRORS } from '../errors/types';
 import { isAbsolute, join } from 'path';
-// @ts-ignore Could not find a declaration file for module 'testcafe-hammerhead'
-import { RequestFilterRule, generateUniqueId } from 'testcafe-hammerhead';
+// @ts-ignore Could not find a declaration file for module '@rajaguruduraisamy/testcafe-hammerhead'
+import { RequestFilterRule, generateUniqueId } from '@rajaguruduraisamy/testcafe-hammerhead';
 import { createHash } from 'crypto';
 import ClientScriptInit from './client-script-init';
 

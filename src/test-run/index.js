@@ -24,7 +24,7 @@ import BrowserConsoleMessages from './browser-console-messages';
 import { UNSTABLE_NETWORK_MODE_HEADER } from '../browser/connection/unstable-network-mode';
 import WarningLog from '../notifications/warning-log';
 import WARNING_MESSAGE from '../notifications/warning-message';
-import { StateSnapshot, SPECIAL_ERROR_PAGE } from 'testcafe-hammerhead';
+import { StateSnapshot, SPECIAL_ERROR_PAGE } from '@rajaguruduraisamy/testcafe-hammerhead';
 import * as INJECTABLES from '../assets/injectables';
 import { findProblematicScripts } from '../custom-client-scripts/utils';
 import getCustomClientScriptUrl from '../custom-client-scripts/get-url';

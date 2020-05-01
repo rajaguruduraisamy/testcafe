@@ -1,5 +1,5 @@
 import path from 'path';
-import { Session } from 'testcafe-hammerhead';
+import { Session } from '@rajaguruduraisamy/testcafe-hammerhead';
 import { UNSTABLE_NETWORK_MODE_HEADER } from '../browser/connection/unstable-network-mode';
 
 

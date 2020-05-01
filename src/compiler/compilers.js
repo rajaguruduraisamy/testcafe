@@ -1,4 +1,4 @@
-import hammerhead from 'testcafe-hammerhead';
+import hammerhead from '@rajaguruduraisamy/testcafe-hammerhead';
 import { Compiler as LegacyTestFileCompiler } from 'testcafe-legacy-api';
 import EsNextTestFileCompiler from './test-file/formats/es-next/compiler';
 import TypeScriptTestFileCompiler from './test-file/formats/typescript/compiler';

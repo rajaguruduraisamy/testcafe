@@ -2,7 +2,7 @@ import path from 'path';
 import OS from 'os-family';
 import { APIError } from '../errors/runtime';
 import { RUNTIME_ERRORS } from '../errors/types';
-import { SPECIAL_BLANK_PAGE } from 'testcafe-hammerhead';
+import { SPECIAL_BLANK_PAGE } from '@rajaguruduraisamy/testcafe-hammerhead';
 
 const PROTOCOL_RE           = /^([\w-]+?)(?=:\/\/)/;
 const SUPPORTED_PROTOCOL_RE = /^(https?|file):/;

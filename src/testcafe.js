@@ -6,7 +6,7 @@ import * as INJECTABLES from './assets/injectables';
 
 const lazyRequire              = require('import-lazy')(require);
 const sourceMapSupport         = lazyRequire('source-map-support');
-const hammerhead               = lazyRequire('testcafe-hammerhead');
+const hammerhead               = lazyRequire('@rajaguruduraisamy/testcafe-hammerhead');
 const loadAssets               = lazyRequire('./load-assets');
 const errorHandlers            = lazyRequire('./utils/handle-errors');
 const BrowserConnectionGateway = lazyRequire('./browser/connection/gateway');

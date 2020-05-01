@@ -1,6 +1,6 @@
 const lazyRequire = require('import-lazy')(require);
 
-const hammerhead                     = lazyRequire('testcafe-hammerhead');
+const hammerhead                     = lazyRequire('@rajaguruduraisamy/testcafe-hammerhead');
 const ReporterPluginHost             = lazyRequire('./reporter/plugin-host');
 const getTestListModule              = lazyRequire('./compiler/test-file/formats/es-next/get-test-list');
 const getTypeScriptTestListModule    = lazyRequire('./compiler/test-file/formats/typescript/get-test-list');

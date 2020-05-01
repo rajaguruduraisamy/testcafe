@@ -1,4 +1,4 @@
-const { RequestFilterRule }                       = require('testcafe-hammerhead');
+const { RequestFilterRule }                       = require('@rajaguruduraisamy/testcafe-hammerhead');
 const testRunTracker                              = require('../../lib/api/test-run-tracker');
 const exportableLib                               = require('../../lib/api/exportable-lib');
 const { RequestMock, RequestLogger, RequestHook } = exportableLib;

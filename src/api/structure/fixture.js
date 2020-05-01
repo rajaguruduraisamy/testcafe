@@ -1,5 +1,5 @@
 import { flattenDeep as flatten } from 'lodash';
-import { SPECIAL_BLANK_PAGE } from 'testcafe-hammerhead';
+import { SPECIAL_BLANK_PAGE } from '@rajaguruduraisamy/testcafe-hammerhead';
 
 import TestingUnit from './testing-unit';
 import { FIXTURE as FIXTURE_TYPE } from './unit-types';

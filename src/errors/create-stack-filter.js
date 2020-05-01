@@ -11,7 +11,7 @@ const REGENERATOR_RUNTIME = BABEL_MODULES_DIR + 'regenerator-runtime' + sep;
 
 const TESTCAFE_LIB        = join(__dirname, '../');
 const TESTCAFE_BIN        = join(__dirname, '../../bin');
-const TESTCAFE_HAMMERHEAD = `${sep}testcafe-hammerhead${sep}`;
+const TESTCAFE_HAMMERHEAD = `${sep}@rajaguruduraisamy${sep}testcafe-hammerhead${sep}`;
 
 const SOURCE_MAP_SUPPORT = `${sep}source-map-support${sep}`;
 
