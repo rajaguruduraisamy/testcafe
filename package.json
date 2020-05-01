@@ -1,8 +1,8 @@
 {
   "name": "@rajaguruduraisamy/testcafe",
-  "description": "Automated browser testing for the modern web development stack.",
+  "description": "Automated browser testing for the modern web development stack. Copied 1.8.5-alpha.2",
   "license": "MIT",
-  "version": "1.8.5-alpha.2",
+  "version": "1.0.1",
   "author": {
     "name": "Developer Express Inc.",
     "url": "https://www.devexpress.com/"
