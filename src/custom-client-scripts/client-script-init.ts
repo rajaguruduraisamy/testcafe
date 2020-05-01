@@ -1,5 +1,5 @@
-// @ts-ignore Could not find a declaration file for module 'testcafe-hammerhead'
-import { RequestFilterRule } from 'testcafe-hammerhead';
+// @ts-ignore Could not find a declaration file for module '@rajaguruduraisamy/testcafe-hammerhead'
+import { RequestFilterRule } from '@rajaguruduraisamy/testcafe-hammerhead';
 
 interface ClientScriptInit {
     path: string;

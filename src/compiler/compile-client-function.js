@@ -1,4 +1,4 @@
-import hammerhead from 'testcafe-hammerhead';
+import hammerhead from '@rajaguruduraisamy/testcafe-hammerhead';
 import asyncToGenerator from 'babel-runtime/helpers/asyncToGenerator';
 import { noop } from 'lodash';
 import loadBabelLibs from './load-babel-libs';

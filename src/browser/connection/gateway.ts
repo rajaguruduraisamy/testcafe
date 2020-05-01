@@ -1,7 +1,7 @@
 import { readSync as read } from 'read-file-relative';
 import { respond404, respond500, respondWithJSON, redirect, preventCaching } from '../../utils/http';
 import RemotesQueue from './remotes-queue';
-import { Proxy } from 'testcafe-hammerhead';
+import { Proxy } from '@rajaguruduraisamy/testcafe-hammerhead';
 import { Dictionary } from '../../configuration/interfaces';
 import BrowserConnection from './index';
 import { IncomingMessage, ServerResponse } from 'http';
@@ -19,7 +19,7 @@ export default class BrowserConnectionGateway {
 
     public constructor (proxy: Proxy, options: { retryTestPages: boolean }) {
         this._remotesQueue   = new RemotesQueue();
-        // @ts-ignore Need to improve typings of the 'testcafe-hammerhead' module
+        // @ts-ignore Need to improve typings of the '@rajaguruduraisamy/testcafe-hammerhead' module
         this.domain          = (proxy as any).server1Info.domain;
         this.connectUrl      = `${this.domain}/browser/connect`;
         this.retryTestPages  = options.retryTestPages;
@@ -28,7 +28,7 @@ export default class BrowserConnectionGateway {
     }
 
     private _dispatch (url: string, proxy: Proxy, handler: Function, method = 'GET'): void {
-        // @ts-ignore Need to improve typings of the 'testcafe-hammerhead' module
+        // @ts-ignore Need to improve typings of the '@rajaguruduraisamy/testcafe-hammerhead' module
         proxy[method](url, (req: IncomingMessage, res: ServerResponse, serverInfo, params: Dictionary<string>) => {
             const connection = this._connections[params.id];
 

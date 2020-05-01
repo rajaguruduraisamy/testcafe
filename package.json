@@ -1,8 +1,8 @@
 {
   "name": "@rajaguruduraisamy/testcafe",
-  "description": "Automated browser testing for the modern web development stack.",
+  "description": "Automated browser testing for the modern web development stack. Copied 1.8.5-alpha.2",
   "license": "MIT",
-  "version": "1.8.5-alpha.2",
+  "version": "1.0.1",
   "author": {
     "name": "Developer Express Inc.",
     "url": "https://www.devexpress.com/"
@@ -53,6 +53,7 @@
   },
   "dependencies": {
     "@types/node": "^10.12.19",
+    "@rajaguruduraisamy/testcafe-hammerhead": "1.0.1",
     "async-exit-hook": "^1.1.2",
     "babel-core": "^6.22.1",
     "babel-plugin-transform-class-properties": "^6.24.1",
@@ -114,7 +115,6 @@
     "source-map-support": "^0.5.16",
     "strip-bom": "^2.0.0",
     "testcafe-browser-tools": "2.0.11",
-    "testcafe-hammerhead": "16.2.9",
     "testcafe-legacy-api": "3.1.11",
     "testcafe-reporter-json": "^2.1.0",
     "testcafe-reporter-list": "^2.1.0",

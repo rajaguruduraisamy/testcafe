@@ -1,4 +1,4 @@
-import { ConfigureResponseEventOptions } from 'testcafe-hammerhead';
+import { ConfigureResponseEventOptions } from '@rajaguruduraisamy/testcafe-hammerhead';
 import RequestHook from './hook';
 import parseUserAgent from '../../utils/parse-user-agent';
 import testRunTracker from '../test-run-tracker';

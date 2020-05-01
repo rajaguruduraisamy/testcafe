@@ -1,5 +1,5 @@
-// @ts-ignore Could not find a declaration file for module 'testcafe-hammerhead'
-import { processScript } from 'testcafe-hammerhead';
+// @ts-ignore Could not find a declaration file for module '@rajaguruduraisamy/testcafe-hammerhead'
+import { processScript } from '@rajaguruduraisamy/testcafe-hammerhead';
 import INTERNAL_PROPERTIES from '../client/driver/internal-properties';
 import ClientScript from './client-script';
 

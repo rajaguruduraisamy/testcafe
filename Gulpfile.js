@@ -65,7 +65,7 @@ const CLIENT_TESTS_SETTINGS_BASE = {
 
     scripts: [
         { src: '/async.js', path: 'test/client/vendor/async.js' },
-        { src: '/hammerhead.js', path: 'node_modules/testcafe-hammerhead/lib/client/hammerhead.min.js' },
+        { src: '/hammerhead.js', path: 'node_modules/@rajaguruduraisamy/testcafe-hammerhead/lib/client/hammerhead.min.js' },
         { src: '/core.js', path: 'lib/client/core/index.min.js' },
         { src: '/ui.js', path: 'lib/client/ui/index.min.js' },
         { src: '/automation.js', path: 'lib/client/automation/index.min.js' },

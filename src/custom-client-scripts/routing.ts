@@ -2,7 +2,7 @@ import getCustomClientScriptUrl from './get-url';
 import getCustomClientScriptCode from './get-code';
 import CONTENT_TYPES from '../assets/content-types';
 import ClientScript from './client-script';
-import { Proxy } from 'testcafe-hammerhead';
+import { Proxy } from '@rajaguruduraisamy/testcafe-hammerhead';
 
 
 interface Test {

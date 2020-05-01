@@ -1,6 +1,6 @@
 import TEST_RUN_PHASE from '../test-run/phase';
 import { TEST_RUN_ERRORS } from '../errors/types';
-import { SPECIAL_BLANK_PAGE } from 'testcafe-hammerhead';
+import { SPECIAL_BLANK_PAGE } from '@rajaguruduraisamy/testcafe-hammerhead';
 
 import {
     SwitchToMainWindowCommand,

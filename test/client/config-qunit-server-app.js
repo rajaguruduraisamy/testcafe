@@ -2,7 +2,7 @@ const url  = require('url');
 const fs   = require('fs');
 const path = require('path');
 
-const createShadowStylesheet = require('testcafe-hammerhead/lib/shadow-ui/create-shadow-stylesheet');
+const createShadowStylesheet = require('@rajaguruduraisamy/testcafe-hammerhead/lib/shadow-ui/create-shadow-stylesheet');
 
 
 //The following code is copied from testcafe-hammerhead
@@ -50,7 +50,7 @@ module.exports = function (app) {
     app.get('/transport-worker.js', function (req, res) {
         res
             .set('content-type', 'application/javascript')
-            .send(fs.readFileSync(path.join(__dirname, '../../node_modules/testcafe-hammerhead/lib/client/transport-worker.js')));
+            .send(fs.readFileSync(path.join(__dirname, '../../node_modules/@rajaguruduraisamy/testcafe-hammerhead/lib/client/transport-worker.js')));
     });
 
     app.all('/xhr-test/:delay', function (req, res) {
