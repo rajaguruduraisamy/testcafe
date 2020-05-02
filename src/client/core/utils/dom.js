@@ -157,10 +157,34 @@ function sortBy (property) {
     };
 }
 
+export function getAllElements (parent) {
+    let elements = [];
+
+    if (!parent)
+        return elements;
+    if (parent.shadowRoot)
+        parent = parent.shadowRoot;
+
+    const childNodes = parent.childNodes;
+    const length = getChildNodesLength(childNodes);
+
+    for (let i = 0; i < length; i++) {
+        let el = childNodes[i];
+
+        if (el.nodeType === 1)
+            elements.push(el);
+        if (el.shadowRoot)
+            el = el.shadowRoot;
+
+        elements = elements.concat(getAllElements(el));
+    }
+    return elements;
+}
+
 export function getFocusableElements (doc, sort = false) {
     // NOTE: We don't take into account the case of embedded contentEditable
     // elements and specify the contentEditable attribute for focusable elements
-    const allElements         = doc.querySelectorAll('*');
+    const allElements         = getAllElements(doc);
     const invisibleElements   = getInvisibleElements(allElements);
     const inputElementsRegExp = /^(input|button|select|textarea)$/;
     const focusableElements   = [];
