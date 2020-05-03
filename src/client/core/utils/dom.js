@@ -178,13 +178,15 @@ export function getAllElements (parent) {
         if (el.nodeType === 1 && el.tagName === 'SLOT') {
             const assignedNodes = el.assignedNodes().filter(node => node.nodeType === 1);
 
-            for (const slotNode of assignedNodes)
-                elements = elements.push(...getAllElements(slotNode));
+            for (const slotNode of assignedNodes) {
+                elements.push(slotNode);
+                elements = elements.concat(getAllElements(slotNode));
+            }
 
             continue;
         }
 
-        elements = elements.push(...getAllElements(el));
+        elements = elements.concat(getAllElements(el));
     }
     return elements;
 }
