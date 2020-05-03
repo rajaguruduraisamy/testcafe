@@ -175,8 +175,16 @@ export function getAllElements (parent) {
             elements.push(el);
         if (el.shadowRoot)
             el = el.shadowRoot;
+        if (el.nodeType === 1 && el.tagName === 'SLOT') {
+            const assignedNodes = el.assignedNodes().filter(node => node.nodeType === 1);
 
-        elements = elements.concat(getAllElements(el));
+            for (const slotNode of assignedNodes)
+                elements = elements.push(...getAllElements(slotNode));
+
+            continue;
+        }
+
+        elements = elements.push(...getAllElements(el));
     }
     return elements;
 }
